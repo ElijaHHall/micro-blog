@@ -1,9 +1,13 @@
-const bloggersForm = document.getElementByid("bloggers-form");
-	bloggersForm.addEventListener("submit", function(e) {
+
+
+
+
+const bloggersForm = document.getElementById("bloggers-form");
+	
+bloggersForm.addEventListener("submit", function(e){
 		e.preventDefault();
 
-		let userName = document.getElementByid('user-name').value;
+		const value = bloggersForm.querySelector('input[type="text"]').value;
 
-		console.log(userName)
-	});
-	
+		console.log(value);
+}); 
