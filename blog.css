@@ -1,0 +1,26 @@
+body {
+	text-align: center;
+	background: url("simon-matzinger-320332-unsplash.jpg");
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-size: cover;
+	background-position: center;
+	background-repeat: none;
+
+}
+
+
+
+p {
+	font-size: 22px;
+}
+
+input {
+	border: 0;
+	padding: 10px;
+	font-size: 18px;
+}
+
+input[input="submit"] {
+	background-color: rgba(255, 141, 136, 0.5);
+}
