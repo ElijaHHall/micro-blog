@@ -1,41 +1,29 @@
 
 
+// const bloggersForm = document.getElementByid("bloggers-form");
+// 	bloggersForm.addEventListener("submit", function(e) {
+// 		e.preventDefault();
 
+// 		const value = bloggersForm.querySelector("input[type="text"]").value;
 
-const bloggersForm = document.getElementById("bloggers-form");
+// 		console.log(value);
+
+// 	});
+
+$(function() {
 	
-bloggersForm.addEventListener("submit", function(e){
-		e.preventDefault();
+	const $form = $("#bloggersForm");
 
-		const value = bloggersForm.querySelector('input[type="text"]').value;
-
-		console.log(value);
-}); 
-// if (sessionStorage.clickcount) {
-// 	sessionStorage.clickcount = Number(sessionStorage.clickcount)
-// 	+ 1;
-// } else {
-// 	sessionStorage.clickcount = 1;
-// }
-// document.getElementById("bloggers-form").innerHTML = "You have clicked the button " +
-// sessionStorage.clickcount + " time(s) in this session.";
-
-var btn = document.createElement("POST");
-var t = document.createTextNode("CLICK");
-
-btn.appendChild(t);
-document.body.appendChild(btn);
+	$form.on("submit", function(event) {
+	event.preventDefault();
 
 
+	let $bloggersValue = $("#typeStuff").val();
 
+	$("ol").append("<li>" + $bloggersValue + "</li>");
 
-// const form = document.getElementById("bloggersForm")
+	$bloggersValue = $("#typeStuff").val('');
 
-// form.addEventListener("submit", function(e){
-	
-// 	e.preventDefault()
-// 	console.log("")
-// });
+});
 
-
-// let inputValue =
+	});

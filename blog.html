@@ -3,29 +3,45 @@
 <head>
 	<meta charset="UTF-8">	
 
+	<link href="blog.css" rel="stylesheet" type="text/css">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
 
-	<link href="blog.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="blog.js" defer></script>
+
 
 	<title>Micro Blog</title>
 </head>
 <body>
-	<h1> Micro Blog </h1>
-	<form id="bloggers-form">
+	<header>
+		
+<h1> Micro Blog </h1>
+	
+	<form type="box" id="bloggersForm">
 		 
-		<input type="text"  placeholder="Write shtuff here">
-		<input type="submit">
+		<input type="text" id="typeStuff" placeholder="Write shtuff here">
+		
+		<button type="submit" id="submitButton">Post</button>
 
+	
 	</form>	
-
-	<button type="button" form="bloggers-form" value="post">  Post</button>
-
+	
 	<p> Shtuff on your mind? Blog to us about it.</p>
 
+</header>
 
-
-
-<script type="text/javascript" src="blog.js"></script>
+<ol> </ol>
+	
 </body>
 </html>
+
+
+
+
+
+
+
+
+	
